@@ -198,7 +198,10 @@
           .enter()
           .append("path")
           .attr("d", path)
-          .call(style,currentYear);
+          .call(style,currentYear)
+		  .attr("stroke", "black")
+		  .attr("stroke-width", 1)
+		  .attr("stroke-opacity", .5);
 
           function style(polygons, year){
             // console.log(polygons);
